@@ -13,7 +13,7 @@
 #  Scenario: This example assigns more than one licenses to a user,  in this example we use the EMSPREMIUM and PowerBi standard license assignment using an array.
 
 
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All -TenantId ***REMOVED***
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All -TenantId 85086bfd-eeee-40c4-b751-ea94d9159ea3
 $e3PBI = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'POWER_BI_STANDARD'
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 

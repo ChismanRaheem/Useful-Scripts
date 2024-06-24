@@ -14,7 +14,7 @@
 #
 
 
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All -TenantId ***REMOVED***
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All -TenantId 85086bfd-eeee-random-b751-randomPii
 $e3PBI = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'POWER_BI_STANDARD'
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 
