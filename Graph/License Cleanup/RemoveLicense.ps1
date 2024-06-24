@@ -11,7 +11,7 @@
 # Ref :https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/set-mguserlicense?view=graph-powershell-1.0
 # Note: Please make sure no null values are in the array or you might experience errors.
 #  Scenario: This example removes the EMSPREMIUM and PowerBi standard license assignment from the user  using an array.
-*
+#
 
 
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All -TenantId ***REMOVED***
