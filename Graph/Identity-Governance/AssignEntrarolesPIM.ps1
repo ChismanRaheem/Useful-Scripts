@@ -3,12 +3,13 @@
 #Enterprise Mobility + Security (EMS) E5 license
 #Microsoft Graph PowerShell using a Privileged Role Administrator role and the appropriate permissions. For this tutorial, the RoleManagement.ReadWrite.Directory delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
 # Ref: https://learn.microsoft.com/en-us/powershell/microsoftgraph/tutorial-pim?view=graph-powershell-1.0
+# Disclaimer
 
 #Set UPN of test  user
 $UPN = "Raheem@FQDN.onmicrosoft.com"
 
 # Connect to graph with required scope using DeviveCode flow.
-Connect-MgGraph -TenantId 536279f6-15cc-45f2-be2d-61e352b51eef -ContextScope Process -UseDeviceAuthentication -Scopes "RoleManagement.ReadWrite.Directory"
+Connect-MgGraph -TenantId 536279f6-15cc-45f2-be2d-A4332b5beef -ContextScope Process -UseDeviceAuthentication -Scopes "RoleManagement.ReadWrite.Directory"
 
 #Set user based on UPN to capture id
 $User = Get-MgUser -Search "UserPrincipalName:$($UPN)" -ConsistencyLevel eventual -Count userCount 
